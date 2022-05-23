@@ -3,20 +3,16 @@
 # Author: Yanghua
 # Created: 20 Aug 2013
 # Modified by: Alexis Marceau
-# Modified: 29 Oct 2021
+# Modified: 23 May 2022
 # Being used in RNAseq to lncRNA pipeline development
 # Version: 0.01
 
 use warnings;
 use strict;
 
-print "Condition name, please be consistent with previous answers:\n";
-$Condition_name = <>;
-chomp($Condition_name);
-
-my $loci = 'lncRNA_Identification/Stringtie/$Condition_name.ens.gtf';
-my $gtf = 'lncRNA_Identification/Stringtie/$Condition_name.ref.gtf';
-my $fileout = '$lncRNA_Identification/CuffCompare/$Condition_name.list_intergenic.txt';
+my $loci = 'loci_replace_ref1';
+my $gtf = 'loci_replace_ref2';
+my $fileout = 'list_intergenic.txt';
 
 foreach my $i (0 .. scalar(@ARGV)-1) {
   if($ARGV[$i] eq '-g1') {
