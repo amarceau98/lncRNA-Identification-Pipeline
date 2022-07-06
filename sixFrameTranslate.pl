@@ -10,12 +10,8 @@
 use warnings;
 use strict;
 
-print "Condition name, please be consistent with previous answers:\n";
-$Condition_name = <>;
-chomp($Condition_name);
-
 my $codon = 'codon.txt';
-my $filein = 'lncRNA_Identification/Pfam/$Condition_name.BLAST.removed.fa';
+my $filein = 'file_in_replace';
 (my $fileout = $filein) =~ s/\.fa$/\.ff/;
 my $min_length = 6;
 
