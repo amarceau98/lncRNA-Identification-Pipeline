@@ -14,12 +14,8 @@
 use warnings;
 use strict;
 
-print "Condition name, please be consistent with previous answers:\n";
-$Condition_name = <>;
-chomp($Condition_name);
-
-my $filein = "lncRNA_Identification/CuffCompare/$Condition_name.intergenic_loci.gtf";
-my $fileout = "lncRNA_Identification/CuffCompare/$Condition_name.summary.intergenic_loci.txt";
+my $filein = "gtf_in";
+my $fileout = "file_out";
 
 my $min_length = 200;
 my $min_exons = 2;
