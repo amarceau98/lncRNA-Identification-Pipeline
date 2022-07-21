@@ -574,9 +574,6 @@ done
 	sort -u $start/$project_path/lncRNA_Identification/Pfam/list2.txt > $start/$project_path/lncRNA_Identification/BLAST/$Name.Pfam.Final.List.txt
 	rm $start/$project_path/lncRNA_Identification/Pfam/list* 
 
-	echo Check Filtering
-	read status_of_filtering
-
 	sed -i 's/:/\t/g' $start/$project_path/lncRNA_Identification/BLAST/$Name.Pfam.Final.List.txt
 	sed -i 's/-/\t/g' $start/$project_path/lncRNA_Identification/BLAST/$Name.Pfam.Final.List.txt
 	cp $start/$project_path/lncRNA_Identification/BLAST/$Name.Pfam.Final.List.txt $start/$project_path/lncRNA_Identification/BLAST/$Name.Pfam.Final.List.bed
