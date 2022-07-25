@@ -12,7 +12,7 @@ use strict;
 
 my $loci = 'loci_replace';
 my $gtf = 'gtf_replace';
-my $fileout = 'intergenic_loci.gtf';
+my $fileout = 'out_replace';
 
 foreach my $i (0 .. scalar(@ARGV)-1) {
   if($ARGV[$i] eq '-g') {
