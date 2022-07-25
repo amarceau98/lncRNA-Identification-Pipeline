@@ -12,7 +12,7 @@ use strict;
 
 my $loci = 'loci_replace_ref1';
 my $gtf = 'loci_replace_ref2';
-my $fileout = 'list_intergenic.txt';
+my $fileout = 'list_replace';
 
 foreach my $i (0 .. scalar(@ARGV)-1) {
   if($ARGV[$i] eq '-g1') {
